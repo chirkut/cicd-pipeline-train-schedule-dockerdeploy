@@ -39,7 +39,7 @@ pipeline {
                 branch 'master'
             }
             steps {
-                input 'Deploy to Production?'
+                /*input 'Deploy to Production?'*/
                 milestone(1)
                 withCredentials([usernamePassword(credentialsId: 'pmittal-login', usernameVariable: 'USERNAME', passwordVariable: 'USERPASS')]) {
                     script {
